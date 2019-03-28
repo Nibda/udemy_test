@@ -1,5 +1,9 @@
+from selenium import webdriver
 from pytest import mark
 
 @mark.entertaintments
-def test_body_entertaintments_functions_as_expected():
-	assert True
+@mark.ui
+def test_entertaintments_tobrowser():
+    browser = webdriver.Chrome(r'c:\chromedriver.exe')
+    browser.get('https://www.carfax.eu/')
+    assert True

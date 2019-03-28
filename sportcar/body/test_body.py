@@ -1,11 +1,14 @@
+from selenium import webdriver
 from pytest import mark
 
 
 @mark.body
 class BodyTests:
 
-    @mark.door
-    def test_body_funtions_as_expected():
+    @mark.ui
+    def test_to_browser():
+        browser = webdriver.Chrome(r'c:\chromedriver.exe')
+        browser.get('https://carsfromwest.com')
         assert True
 
     def test_bumper(self):

@@ -1,5 +1,9 @@
+from selenium import webdriver
 from pytest import mark
 
 @mark.engine
-def test_engine_funtions_as_expected():
-	assert True
+@mark.ui
+def test_engine_funtions_to_browser():
+    browser = webdriver.Chrome(r'c:\chromedriver.exe')
+    browser.get('https://cargoline.com.ua')
+    assert True
