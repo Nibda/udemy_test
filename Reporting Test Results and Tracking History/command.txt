@@ -1,0 +1,2 @@
+команда для виводу результатів у .html файл
+pytest --html="results.html"

@@ -1,0 +1,7 @@
+pytest -v //show functions
+pytest -m {marker} //exec with decorated marker
+pytest -v -m marker
+pytest -v -s -m maker
+
+pip intall pytest-html
+pytest --html="results.html"
